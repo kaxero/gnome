@@ -1,0 +1,12 @@
+diff -uPr gobject-introspection-0.6.7.orig/docs/reference/Makefile.am gobject-introspection-0.6.7/docs/reference/Makefile.am
+--- gobject-introspection-0.6.7.orig/docs/reference/Makefile.am	2010-01-13 22:38:36.000000000 +0100
++++ gobject-introspection-0.6.7/docs/reference/Makefile.am	2010-01-13 22:47:14.000000000 +0100
+@@ -4,7 +4,7 @@
+ DOC_MODULE=gi
+ 
+ # The top-level SGML file.
+-DOC_MAIN_SGML_FILE=gi-docs.sgml
++DOC_MAIN_SGML_FILE=gi-docs.sgml sgml-build.stamp
+ 
+ # The directory containing the source code. Relative to $(srcdir)
+ DOC_SOURCE_DIR=../../girepository
