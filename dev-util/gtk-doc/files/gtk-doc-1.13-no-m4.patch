@@ -1,0 +1,38 @@
+diff -up -ruN gtk-doc-1.13.orig/Makefile.am gtk-doc-1.13/Makefile.am
+--- gtk-doc-1.13.orig/Makefile.am	2010-01-13 21:43:57.000000000 +0100
++++ gtk-doc-1.13/Makefile.am	2010-01-13 21:44:27.000000000 +0100
+@@ -42,16 +42,12 @@ gtkdocdata_DATA = \
+ pkgconfigdir = $(datadir)/pkgconfig
+ pkgconfig_DATA = gtk-doc.pc
+ 
+-aclocaldir = $(datadir)/aclocal
+-aclocal_DATA = gtk-doc.m4
+-
+ sgmldir = $(datadir)/sgml/gtk-doc
+ sgml_DATA = gtk-doc.cat
+ 
+ EXTRA_DIST = \
+ 	MAINTAINERS     \
+ 	gtk-doc.pc.in   \
+-	gtk-doc.m4      \
+ 	gtk-doc.make    \
+ 	gtk-doc.notmpl.make    \
+ 	gtk-doc.doap \
+diff -up -ruN gtk-doc-1.13.orig/Makefile.in gtk-doc-1.13/Makefile.in
+--- gtk-doc-1.13.orig/Makefile.in	2010-01-13 21:43:57.000000000 +0100
++++ gtk-doc-1.13/Makefile.in	2010-01-13 21:44:55.000000000 +0100
+@@ -321,14 +321,11 @@ gtkdocdata_DATA = \
+ 
+ pkgconfigdir = $(datadir)/pkgconfig
+ pkgconfig_DATA = gtk-doc.pc
+-aclocaldir = $(datadir)/aclocal
+-aclocal_DATA = gtk-doc.m4
+ sgmldir = $(datadir)/sgml/gtk-doc
+ sgml_DATA = gtk-doc.cat
+ EXTRA_DIST = \
+ 	MAINTAINERS     \
+ 	gtk-doc.pc.in   \
+-	gtk-doc.m4      \
+ 	gtk-doc.make    \
+ 	gtk-doc.notmpl.make    \
+ 	gtk-doc.doap \
